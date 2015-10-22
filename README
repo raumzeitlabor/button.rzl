@@ -1,1 +1,20 @@
-README.ad
+button.rzl
+==========
+
+Firmware for the RaumZeitLabor's analog "mushroom" button (formely used for the
+old Pingie Pie).
+
+Status
+------
+
+Currently, this runs on an Arduino Uno board, but the eventual goal is to port
+it to work on an ESP8266, adding WiFi capability to the button and making it
+possible to have button presses generate generic events for Internet-of-Things
+frameworks such as Openhub or Node-RED.
+
+TODO
+----
+
+- port to ESP8266
+- write network service to register button presses via WiFi
+- it's probably better to use a pre-existing button & debounce library
